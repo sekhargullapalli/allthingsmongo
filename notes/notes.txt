@@ -1,0 +1,8 @@
+Installing mongodb database tools (for mongo import)
+=====================================
+wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2004-x86_64-100.4.1.deb
+sudo apt install ./mongodb-database-tools-*-100.4.1.deb
+
+Mongo shell mongosh
+====================
+Install using instuctions in https://docs.mongodb.com/mongodb-shell/install/

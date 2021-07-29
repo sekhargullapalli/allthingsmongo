@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  mongodbservice:
+    image: mongo:latest
+    container_name: mongodbexplore
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:    
+      - ./db:/data/db
+      - ./configdb:/data/configdb
+    networks: 
+      - vaqnetwork    
+    environment:
+      MONGO_INITDB_DATABASE: initdb
+      MONGO_INITDB_ROOT_USERNAME: dbadmin
+      MONGO_INITDB_ROOT_PASSWORD: t>AryKD4=@gT,pSu_Ntr(Atm_XX5 
+    command: [--auth]
+
+networks:
+  vaqnetwork:
+    external: true
+    driver: bridge
+    name: explore
