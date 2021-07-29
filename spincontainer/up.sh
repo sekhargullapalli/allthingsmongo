@@ -1,7 +1,7 @@
-rm -rf db
-rm -rf configdb
-mkdir db
-mkdir configdb
+rm -rf vdb
+rm -rf vconfigdb
+mkdir vdb
+mkdir vconfigdb
 printf "\n$(tput setaf 0)$(tput setab 3)creating and starting the container.....\n"
 tput init
 sleep 2

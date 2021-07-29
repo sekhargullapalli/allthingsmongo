@@ -6,6 +6,10 @@
 #Scribble
 [Ss]cribble.txt
 
+#Temporary Volumes
+vdb/
+vconfigdb/
+
 # User-specific files
 *.rsuser
 *.suo
