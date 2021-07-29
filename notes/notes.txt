@@ -1,3 +1,9 @@
+Simple Container and Shell 
+==========================
+docker run --name mongoexplore --network explore -d mongo:latest
+docker run -it --network explore --rm mongo mongo --host mongoexplore  test
+
+
 Installing mongodb database tools (for mongo import)
 =====================================
 wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2004-x86_64-100.4.1.deb
